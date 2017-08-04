@@ -99,8 +99,9 @@ namespace luna
     class CallCFuncException : public Exception
     {
     public:
-        CallCFuncException() = default;
-
+#if !defined(_MSC_VER)
+		CallCFuncException() = default;
+#endif
         template<typename... Args>
         CallCFuncException(Args&&... args)
         {

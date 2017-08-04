@@ -22,3 +22,5 @@ CMakeFiles/
 CMakeScripts/
 cmake_install.cmake
 Makefile
+
+build/
